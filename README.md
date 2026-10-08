@@ -1,2 +1,2 @@
-# CMD
-Crypto Market Data
+# crypto-market-data-pipeline
+Crypto Market Data Pipeline
