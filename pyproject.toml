@@ -18,3 +18,20 @@ dev = [
     "pre-commit>=4.6.2",
     "ruff>=0.16.10",
 ]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "F", # Pyflakes: Detection of obvious logical errors, bugs and unused imports/variables.
+    "E", # pycodestyle (Errors): Checking basic compliance with PEP 8 style and formatting.
+    "W", # pycodestyle (Warnings): Warnings about stylistic flaws, such as extra spaces.
+    "I", # isort: Automatic ordering and grouping of imports alphabetically and by category.
+    "B",    # flake8-bugbear: Search for hidden architectural problems and potential design errors in the code.
+    "UP", # pyupgrade: Automatic updating of the old Python syntax to modern standards 3.12.
+"S", # flake8-bandit: Checking code security for vulnerabilities (relevant for API keys of crypto exchanges).
+    "ASYNC",# flake8-async: The search for bad practices when working with asynchronous code and coroutines.
+    "RUF" # Ruff-specific: Special built-in rules from the creators of Ruff to improve the quality of the code.
+]
